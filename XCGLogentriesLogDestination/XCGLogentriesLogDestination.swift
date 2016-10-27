@@ -10,16 +10,17 @@ import le
 
 extension XCGLogger {
     
-    open class XCGLogentriesLogDestination: XCGBaseLogDestination {
+    open class XCGLogentriesLogDestination: BaseDestination {
         open var leLog: LELog
         
         public init(leLog : LELog, owner: XCGLogger, identifier: String = "com.cerebralgardens.xcglogger.logdestination.logentries") {
             self.leLog = leLog
             super.init(owner: owner, identifier : identifier)
         }
-
-        open override func output(_ logDetails: XCGLogDetails, text: String) {
-            leLog.log(UIDevice.currentDevice().identifierForVendor!.UUIDString + ": " + text)
+        
+        open override func output(logDetails: LogDetails, message: String) {
+            let logOutput = (UIDevice.current.identifierForVendor?.uuidString)! + ": " + message
+            leLog.log(logOutput as NSObject!)
         }
     }
 }
