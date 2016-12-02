@@ -8,7 +8,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "XCGLogentriesLogDestination"
+  s.name             = "XCGLoggerLogentriesConnector"
   s.version          = '1.0.0'
   s.summary          = "XCGLogger extension to log to the Logentries service."
   s.description      = <<-DESC

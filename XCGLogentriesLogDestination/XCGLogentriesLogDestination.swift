@@ -10,7 +10,7 @@ import le
 
 extension XCGLogger {
     
-    open class XCGLogentriesLogDestination: BaseDestination {
+    open class LogentriesDestination: BaseDestination {
         open var leLog: LELog
         
         public init(leLog : LELog, owner: XCGLogger, identifier: String = "com.cerebralgardens.xcglogger.logdestination.logentries") {
