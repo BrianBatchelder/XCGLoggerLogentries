@@ -24,12 +24,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.source_files = 'XCGLogentriesLogDestination/XCGLogentriesLogDestination.swift'
+  s.source_files = 'XCGLoggerLogentriesConnector/XCGLoggerLogentriesConnector.swift'
   #s.resource_bundles = {}
 
   # s.public_header_files
   # s.frameworks
-  s.dependency 'XCGLogger'
+  s.dependency 'XCGLogger', '~> 4.0.0'
   s.dependency 'le'
   
 end
