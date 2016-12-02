@@ -9,17 +9,17 @@
 
 Pod::Spec.new do |s|
   s.name             = "XCGLogentriesLogDestination"
-  s.version          = "0.9.9"
+  s.version          = '1.0.0'
   s.summary          = "XCGLogger extension to log to the Logentries service."
   s.description      = <<-DESC
-                       XCGLogger extension to log to the Logentries service.
+                       Allows you to send your XCGLogger logs to the Logentries cloud logging service.
                        DESC
-  s.homepage         = "https://github.com/brianbatchelder/XCGLogentriesLogDestination"
+  s.homepage         = "http://github.com/brianbatchelder/XCGLoggerLogentries"
   s.screenshots     = ""
   s.license          = 'MIT'
   s.author           = { "Brian Batchelder" => "brian@briansbrain.biz" }
-  s.source           = { :git => "https://github.com/brianbatchelder/XCGLogentriesLogDestination.git", :tag => s.version.to_s }
-  s.social_media_url = 'https://twitter.com/briansbrainbiz'
+  s.source           = { :git => "https://github.com/brianbatchelder/XCGLoggerLogentries.git", :tag => "#{s.version}" }
+  s.social_media_url = 'http://twitter.com/briansbrainbiz'
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
